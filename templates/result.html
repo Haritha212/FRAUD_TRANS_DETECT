@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding: 50px;
+        }
+        .result-box {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .result-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .back-button {
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transaction Fraud Detection</h1>
+    <div class="result-box">
+        <p class="result-text">{{ result }}</p>
+    </div>
+    <a href="/" class="back-button">Back to Home</a>
+</body>
+</html>

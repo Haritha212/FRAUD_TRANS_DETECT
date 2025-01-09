@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Transaction Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fraud Transaction Detection</h1>
+    </header>
+    <div class="container">
+        <form id="fraudDetectionForm" method="POST" action="/templates/result.html">
+            <div class="input-group">
+                <label for="amount">Transaction Amount</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div class="input-group">
+                <label for="type">Transaction Type</label>
+                <select id="type" name="type" required>
+                    <option value="">Select Type</option>
+                    <option value="CASH_IN">CASH_IN</option>
+                    <option value="CASH_OUT">CASH_OUT</option>
+                    <option value="DEBIT">DEBIT</option>
+                    <option value="PAYMENT">PAYMENT</option>
+                    <option value="TRANSFER">TRANSFER</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="old_bal_org">Old Balance (Origin)</label>
+                <input type="number" id="old_bal_org" name="old_bal_org" required>
+            </div>
+            <div class="input-group">
+                <label for="new_bal_org">New Balance (Origin)</label>
+                <input type="number" id="new_bal_org" name="new_bal_org" required>
+            </div>
+            <div class="input-group">
+                <label for="old_bal_dest">Old Balance (Destination)</label>
+                <input type="number" id="old_bal_dest" name="old_bal_dest" required>
+            </div>
+            <div class="input-group">
+                <label for="new_bal_dest">New Balance (Destination)</label>
+                <input type="number" id="new_bal_dest" name="new_bal_dest" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="result" id="resultContainer">
+        <!-- Result will be displayed here -->
+    </div>
+</body>
+</html>
