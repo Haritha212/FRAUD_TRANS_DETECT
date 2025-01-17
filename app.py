@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 
 # Load the pre-trained models and encoders
-encoder = pickle.load(open('encoder.pkl', 'rb'))
-scaler = pickle.load(open('scaler.pkl', 'rb'))
+encoder = pickle.load(open('encoder_final.pkl', 'rb'))
+scaler = pickle.load(open('scaler_final.pkl', 'rb'))
 model = pickle.load(open('final_model.pkl', 'rb'))
 
 app = Flask(__name__)
