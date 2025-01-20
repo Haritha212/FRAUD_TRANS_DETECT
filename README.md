@@ -23,8 +23,7 @@ Follow the steps below to set up and run the project locally.
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/traffic-accident-analysis.git
-    cd traffic-accident-analysis
+    git clone https://github.com/Anja-c1511/FRAUD_TRANS_DETECT.git
     ```
 
 2. **Set up a Python Virtual Environment**:
@@ -49,14 +48,6 @@ Follow the steps below to set up and run the project locally.
 
 ## Usage
 
-1. Navigate the sidebar to access different pages:
-    - Home
-    - Severity Prediction
-    - Peak Time Prediction
-    - About
-2. Use the filter dropdowns to refine your analysis based on specific criteria (district, police station, etc.).
-3. Explore the interactive map to view accident trends.
+1. Enter your inputs in required columns.
+2. Enter Submit button
 
-## Acknowledgments
-
-- Flask for backend framework.
